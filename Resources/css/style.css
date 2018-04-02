@@ -1,0 +1,182 @@
+/* Universal Styles */
+html {
+  font-family: Helvetica;
+  font-size: 16px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.slategrey {
+  color: #2F4F4F
+}
+
+.grey {
+  color: #333333
+}
+
+.darkgrey {
+  color: #1a1a1a
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+ /* Header Styles */
+
+header {
+  display: flex;
+  height: 64px;
+  align-items: center;
+  justify-content: space-between;
+  color: #404040;
+}
+
+.header_item {
+  display: flex;
+  align-items: center;
+}
+
+#left_header {
+  float: left;
+  margin-left: 24px;
+}
+
+#left_header img {
+  height: 40px;
+}
+
+#left_header span {
+ font-size: 24px;
+}
+
+#right_header {
+  float: right;
+  margin-right: 24px;
+}
+
+#right_header span {
+  margin-left: 16px;
+}
+
+/* Banner Styles */
+
+#banner {
+  display: flex;
+  align-items: center;
+  background-color: LightGrey;
+  padding: 32px 24px;
+}
+
+#banner .image_container {
+  width: 55%;
+}
+
+#banner .image_container img {
+  width: 100%;
+  height: auto;
+}
+
+#banner .content {
+  display: flex;
+  flex-flow: column;
+  margin-left: 5%;
+  justify-content: center;
+}
+
+#banner .content h1 {
+  font-size: 50px;
+  line-height: 1.2;
+}
+
+#banner .content h2 {
+  font-size: 25px;
+  line-height: 1.2;
+  margin: 20px 0;
+}
+
+#banner .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding: 12px;
+  margin: 25px 0;
+  background-color: #333333;
+  color: white;
+  font-size: 20px;
+}
+
+/* Information Styling */
+
+#information {
+  display: flex;
+}
+
+#information .left {
+  width: 60%;
+  display: flex;
+  flex-flow: column;
+  padding: 32px 24px;
+}
+
+#information .left .image_container img {
+  width: 100%;
+}
+
+#information .left .content h1 {
+  font-size: 50px;
+  margin-top: 32px;
+}
+
+#information .left .content p {
+  margin-top: 30px;
+  line-height: 1.2;
+}
+
+#information .left .content h2 {
+  font-size: 12px;
+  margin-top: 32px;
+}
+
+#information .right {
+  display: flex;
+  flex-flow: column;
+  width: 40%;
+  border-left: 1px solid #bfbfbf;
+}
+
+#information .right .item {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+}
+
+#information .right .item .image_container {
+  width: 30%;
+}
+
+#information .right .item .image_container img {
+  width: 100%;
+}
+
+#information .right .item .content {
+  display: flex;
+  flex-flow: column;
+  margin-left: 16px;
+}
+
+#information .right .item .content h1 {
+  
+}
+
+#information .right .item .content p {
+
+}
+
+#information .right .item .content span {
+
+}
