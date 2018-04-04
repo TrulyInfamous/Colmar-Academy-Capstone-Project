@@ -229,7 +229,7 @@ header {
   transition: background-color 0.5s linear;
   color: white;
   text-shadow: 2px 2px 5px black;
-  border: 2px solid #505050;
+  border: 1px solid black;
   border-radius: 5px;
 }
 
@@ -501,7 +501,7 @@ header {
   transition: background-color 0.5s linear;
   color: white;
   text-shadow: 2px 2px 5px black;
-  border: 1px solid #505050;
+  border: 1px solid black;
   border-radius: 5px;
 }
 
