@@ -225,12 +225,12 @@ header {
   padding: 16px;
   align-items: center;
   margin: 1% 2px 1% 5px;
-  background-color: rgba(100, 100, 100, 0.8);
   transition: background-color 0.5s linear;
   color: white;
-  text-shadow: 2px 2px 5px black;
   border: 1px solid black;
   border-radius: 5px;
+  color: #404040;
+
 }
 
 #information .right .item .image_container {
@@ -252,7 +252,6 @@ header {
 #information .right .item .content h1 {
   font-size: 1.5rem;
   padding: 8px 0;
-  color: white;
 }
 
 #information .right .item .content p {
@@ -262,12 +261,13 @@ header {
 
 #information .right .item .content span {
   padding: 8px 0;
-  color: white;
   font-size: 0.8rem;
 }
 
 #information .right .item:hover {
-  background-color: #00b300;
+  background-color: rgba(100, 100, 100, 0.8);
+  text-shadow: 2px 2px 5px black;
+  color: white;
 }
 
 @media only screen and (min-width: 751px) {
@@ -497,16 +497,16 @@ header {
   padding: 16px;
   align-items: center;
   margin: 1% 2px 1% 5px;
-  background-color: rgba(100, 100, 100, 0.8);
   transition: background-color 0.5s linear;
-  color: white;
-  text-shadow: 2px 2px 5px black;
   border: 1px solid black;
   border-radius: 5px;
+  color: #404040;
 }
 
 #thesis .thesis_container .right .item:hover {
-  background-color: #00b300;
+  background-color: rgba(100, 100, 100, 0.8);
+  color: white;
+  text-shadow: 2px 2px 5px black;
 }
 
 #thesis .thesis_container .right .item .image_container {
@@ -527,7 +527,6 @@ header {
 #thesis .thesis_container .right .item .content h2 {
   font-size: 1.5rem;
   padding: 8px 0;
-  color: white;
 }
 
 #thesis .thesis_container .right .item .content span {
