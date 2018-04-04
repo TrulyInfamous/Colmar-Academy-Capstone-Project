@@ -25,6 +25,10 @@ a {
   text-decoration: inherit;
 }
 
+.fontblue {
+  color: #0080cc;
+}
+
  /* Header Styles */
 
 header {
@@ -62,12 +66,44 @@ header {
   margin-left: 16px;
 }
 
+@media only screen and (min-width: 751px) {
+  #mobile_header {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  header{
+    display: none;
+  }
+  #mobile_header {
+    display: flex;
+    height: 64px;
+    align-items: center;
+    width: 100%;
+  }
+
+  #mobile_header .image_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  #mobile_header .image_container img {
+    padding: 16px 32px;
+  }
+
+}
+
 /* Banner Styles */
 
 #banner {
   display: flex;
   align-items: center;
-  background-color: LightGrey;
+  background-color: rgba(0, 0, 200, 0.8);
+  color: white;
+  text-shadow: 2px 2px 4px black;
 }
 
 #banner .image_container {
@@ -86,6 +122,7 @@ header {
   flex-flow: column;
   margin-left: 5%;
   justify-content: center;
+  width: 30%;
 }
 
 #banner .content h1 {
@@ -109,6 +146,7 @@ header {
   font-size: 20px;
   transition: background-color 0.5s linear;
   border-radius: 8px;
+  border: 1px solid black;
 }
 
 #banner .button:hover {
@@ -117,6 +155,27 @@ header {
 
 #banner .button span {
   padding: 12px;
+}
+
+@media only screen and (max-width: 750px) {
+  #banner {
+    flex-flow: column;
+  }
+
+  #banner .image_container {
+    width: 100%;
+    padding: 0;
+  }
+
+  #banner .image_container img {
+    border-radius: 0;
+  }
+
+  #banner .content {
+    width: 90%;
+    padding: 16px;
+  }
+
 }
 
 /* Information Styling */
@@ -166,7 +225,7 @@ header {
   padding: 16px;
   align-items: center;
   margin: 1% 2px 1% 5px;
-  background-color: LightSlateGrey;
+  background-color: rgba(0, 0, 200, 0.8);
   transition: background-color 0.5s linear;
   color: white;
   text-shadow: 2px 2px 5px black;
@@ -211,13 +270,79 @@ header {
   background-color: #00b300;
 }
 
+@media only screen and (min-width: 751px) {
+  #mobile_information {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #information {
+    display: none;
+  }
+
+  #mobile_information {
+    display: flex;
+    padding: 16px 5%;
+    justify-content: center;
+  }
+
+  #mobile_information .item_container {
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+  }
+
+  #mobile_information .item_container .item {
+    display: flex;
+    flex-flow: column;
+    margin: 4px 0;
+    color: #404040;
+    border-radius: 5px;
+    transition: all 0.5s linear;
+  }
+
+  #mobile_information .item_container .item:hover {
+    color: white;
+    background-color: #404040;
+    text-shadow: 2px 2px 5px black;
+  }
+
+  #mobile_information .item_container .item .image_container {
+    width: 100%;
+  }
+
+  #mobile_information .item_container .item .image_container img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  #mobile_information .item_container .item .content {
+    padding: 16px;
+  }
+
+  #mobile_information .item_container .item .content h2 {
+    font-size: 1.8rem;
+  }
+
+  #mobile_information .item_container .item .content p {
+    padding: 8px 0;
+  }
+
+  #mobile_information .item_container .item .content span {
+    padding: 8px 0;
+  }
+
+}
+
 /* Courses Styling */
 
 #courses {
   display: flex;
   flex-flow: column;
   padding: 32px 8.5%;
-  background-color: LightGrey;
+  background-color: rgba(0, 0, 200, 0.8);
 }
 
 #courses .title {
@@ -226,7 +351,8 @@ header {
 
 #courses .title h1 {
   font-size: 3rem;
-  color: #303030;
+  color: white;
+  text-shadow: 2px 2px 4px black;
 }
 
 #courses .item_container {
@@ -258,8 +384,8 @@ header {
 
 #courses .item .image_container img {
   width: 100%;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 
 #courses .item .content {
@@ -272,12 +398,43 @@ header {
   margin-bottom: 16px;
 }
 
-#courses .item .content h2 {
-}
-
 #courses .item .content p {
   padding: 8px 0 0 0;
   line-height: 1.4;
+}
+
+@media only screen and (max-width: 920px) {
+  #courses {
+    padding: 24px 2%;
+  }
+
+  #courses .item_container {
+    justify-content: center;
+  }
+
+  #courses .item {
+    margin: 16px 8px;
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  #courses .item {
+    width: 90%;
+  }
+
+  #courses .item .content h2 {
+    margin: 0;
+  }
+
+  #courses .item .content p,
+  #courses .item .content span {
+    display: none;
+  }
+
+  #courses .item .image_container {
+    display: none;
+  }
 }
 
 /* Thesis Styling */
@@ -333,7 +490,6 @@ header {
   display: flex;
   flex-flow: column;
   padding: 0 24px;
-  justify-content: center;
 }
 
 #thesis .thesis_container .right .item {
@@ -341,11 +497,11 @@ header {
   padding: 16px;
   align-items: center;
   margin: 1% 2px 1% 5px;
-  background-color: LightSlateGrey;
+  background-color: rgba(0, 0, 200, 0.8);
   transition: background-color 0.5s linear;
   color: white;
   text-shadow: 2px 2px 5px black;
-  border: 2px solid #505050;
+  border: 1px solid #505050;
   border-radius: 5px;
 }
 
@@ -378,17 +534,48 @@ header {
   padding: 8px 0;
 }
 
+@media only screen and (max-width: 830px) {
+  #thesis .thesis_container .right {
+    display: none;
+  }
+
+  #thesis .thesis_container .left {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 560px) {
+  #thesis .thesis_container .left .content {
+    display: none;
+  }
+}
+
 /* Footer Styling */
 
 footer {
   display: flex;
   padding: 16px 24px 64px 24px;
-  color: Grey;
+  color: white;
   justify-content: space-between;
   margin: 0 auto;
   border-top: 1px solid Grey;
+  background-color: rgba(0, 0, 200, 0.8);
+  text-shadow: 2px 2px 4px black;
 }
 
 footer .right span {
   margin-left: 16px;
+}
+
+@media only screen and (max-width: 515px) {
+  footer {
+    padding: 16px 0 32px 0;
+    justify-content: center;
+    margin: 0;
+  }
+
+  footer .right span {
+    display: none;
+  }
 }
