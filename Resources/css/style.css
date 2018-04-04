@@ -101,7 +101,7 @@ header {
 #banner {
   display: flex;
   align-items: center;
-  background-color: rgba(0, 0, 200, 0.8);
+  background-color: rgba(100, 100, 100, 0.8);
   color: white;
   text-shadow: 2px 2px 4px black;
 }
@@ -225,7 +225,7 @@ header {
   padding: 16px;
   align-items: center;
   margin: 1% 2px 1% 5px;
-  background-color: rgba(0, 0, 200, 0.8);
+  background-color: rgba(100, 100, 100, 0.8);
   transition: background-color 0.5s linear;
   color: white;
   text-shadow: 2px 2px 5px black;
@@ -342,7 +342,7 @@ header {
   display: flex;
   flex-flow: column;
   padding: 32px 8.5%;
-  background-color: rgba(0, 0, 200, 0.8);
+  background-color: rgba(100, 100, 100, 0.8);
 }
 
 #courses .title {
@@ -497,7 +497,7 @@ header {
   padding: 16px;
   align-items: center;
   margin: 1% 2px 1% 5px;
-  background-color: rgba(0, 0, 200, 0.8);
+  background-color: rgba(100, 100, 100, 0.8);
   transition: background-color 0.5s linear;
   color: white;
   text-shadow: 2px 2px 5px black;
@@ -560,7 +560,7 @@ footer {
   justify-content: space-between;
   margin: 0 auto;
   border-top: 1px solid Grey;
-  background-color: rgba(0, 0, 200, 0.8);
+  background-color: rgba(100, 100, 100, 0.8);
   text-shadow: 2px 2px 4px black;
 }
 
